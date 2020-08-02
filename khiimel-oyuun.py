@@ -5,7 +5,7 @@ import re
 def answer(question):
     if re.match(question,r"\s+"):
         return "我们教信息技术的老师很漂亮，我很想草她"
-    if random.uniform(0,1) <= (random_rate := 0.114514):
+    elif random.uniform(0,1) <= (random_rate := 0.114514):
         return "是的，你很懂{}".format(question)
     elif random.uniform(0,1) <= (random_rate := 0.233):
         return "什么是{}".format(question)
